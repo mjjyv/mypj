@@ -1,10 +1,11 @@
 import pytest
 from app import app, db
 
+
 @pytest.fixture
 def client():
-    app.config['TESTING'] = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+    app.config["TESTING"] = True
+    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///test.db"
     with app.test_client() as client:
         with app.app_context():
             db.create_all()
@@ -12,6 +13,7 @@ def client():
         with app.app_context():
             db.drop_all()
 
+
 def test_admin_page(client):
-    response = client.get('/admin')
+    response = client.get("/admin")
     assert response.status_code == 200
