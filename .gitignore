@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+venv/
+dist/
+build/
+*.egg-info/
+htmlcov/
+.coverage
+coverage.xml
+staging/
+site.db
+test.db
