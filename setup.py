@@ -9,7 +9,7 @@ setup(
         "flask-admin",
         "flask-sqlalchemy",
     ],
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="mjjyv",
+    author_email="minhvueye363@gmail.com",
     description="A Flask project with admin interface",
 )
