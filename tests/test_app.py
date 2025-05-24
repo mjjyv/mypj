@@ -14,6 +14,8 @@ def client():
             db.drop_all()
 
 
+
 def test_admin_page(client):
     response = client.get("/admin/", follow_redirects=True)
     assert response.status_code == 200
+
